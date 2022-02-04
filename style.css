@@ -1,0 +1,117 @@
+.clock{
+	width: 600px;
+	height: 600px;
+	border: 7px solid black;
+	position: relative;
+	top: 15px;
+	left: 26%;
+	border-radius: 50%;
+	background: #20B2AA;
+	opacity: .9;
+}
+
+.minute{
+	width: 25px;
+	height: 50px;
+	background: black;
+	border-radius: 10px;
+}
+
+
+.minute_12{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10px;
+	
+}
+
+
+.right_30{
+	position: absolute;
+	top:90%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.minute_15{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(90deg);
+	left: 92%;
+}
+
+
+
+.left_15{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(90deg);
+	left: 4%;
+}
+
+
+.clock_center{
+	position: absolute;
+	left: 46%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: black;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+.arrow_second{
+	width: 6px;
+	height: 220px;
+	background: black;
+	border-radius: 50px;
+	margin: 0 auto;
+	margin-top: 13.7%;
+	animation: clock-rotate 60s linear infinite;
+	transform-origin: bottom center;
+	background: black;
+}
+
+.arrow_minute{
+	width: 22px;
+	height: 190px;
+	background: black;
+	border-radius: 50px;
+	position: absolute;
+	bottom: 49%;
+	left: 48%;
+	transform: translateX(-50%);
+	animation: clock-rotate 3600s linear infinite;
+	transform-origin: bottom center;
+	background: black;
+}
+
+.arrow_hour{
+	width: 32px;
+	height: 150px;
+	background: black;
+	border-radius: 50px;
+	margin: 0 auto;
+	position: absolute;
+	left: 47.3%;
+	transform: translateX(-50%);
+	bottom: 49%;
+	animation: clock-rotate 43200s linear infinite;
+	transform-origin: bottom center;
+	background: black;
+	
+}
+
+@keyframes clock-rotate{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}
+
+}

@@ -1,0 +1,82 @@
+.circle{position: absolute;
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+     height: 500px;
+     width: 500px;
+     border:10px solid black;
+     border-radius: 500px;
+}
+.simple1,.simple2,.simple3{
+    position: relative;
+    background-color: black;
+    height: 20px;
+    width: 55px;
+    top:53%;
+    left:0%;
+    border-radius:40px;
+    transform: translateY(-50%);
+}
+.simple2{
+    top:50%;
+    left: 90%;
+    }
+.simple3{
+   width: 20px;
+   height: 50px;
+   top:-4%;
+   left: 48%;
+}
+.simple4{
+    position:absolute;
+    background-color: black;
+    width: 20px;
+   height: 50px;
+    top:100%;
+    left:48%;
+    border-radius:40px;
+    transform: translateX(-50%);
+    transform: translateY(-100%);
+ }
+.small-circle{
+    position: absolute;
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    border-radius: 400px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.elipse1,.elipse2{
+    position: relative;
+    height:230px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    left: 48%;
+    bottom:48%;
+    transform: translate(-48%);
+    animation-name:changeRadius;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    transform-origin: bottom center;
+}
+.elipse1{
+    bottom: 0%;
+    position: relative;
+    height:180px;
+    width: 30px;
+    animation-duration:60s;
+}
+@keyframes changeRadius{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+       
+    }
+}

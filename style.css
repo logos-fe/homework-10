@@ -85,7 +85,7 @@ display: flex;
         left: 47%;
         transform-origin: bottom center;
         animation-name: clock;
-        animation: clock 60s infinite linear ;
+        animation: clock 60s linear 0s infinite;
 }
 
 .small-arrow {
@@ -99,7 +99,7 @@ display: flex;
         top: 15%;
         transform-origin: bottom center;
         animation-name: clock;
-        animation: clock 3600s infinite linear ;
+        animation: clock 3600s linear 0s infinite;
 }
 
 

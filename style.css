@@ -1,11 +1,14 @@
 .container {
 width: 100%;
 height: 700px;
-background: url(https://oir.mobi/uploads/posts/2021-03/1616533615_21-p-fon-stena-31.jpg);
+background: url(https://ak.picdn.net/shutterstock/videos/1379695/thumb/1.jpg);
 display: flex;
 }
 
-
+.kotik-babki {
+    width: 500px;
+    height: 500px;
+}
 
 .clock {
     background-color: bisque;

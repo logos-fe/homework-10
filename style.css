@@ -81,11 +81,11 @@ display: flex;
         border: none;
         border-radius: 70%;
         position: absolute;
+        top: 8%;
         left: 47%;
         transform-origin: bottom center;
         animation-name: clock;
-        animation-duration: 60s;
-        top: 7%;
+        animation: clock 60s infinite linear ;
 }
 
 .small-arrow {
@@ -95,12 +95,13 @@ display: flex;
         border: none;
         border-radius: 70%;
         position: absolute;
-        left: 47%;
+        left: 48%;
         top: 15%;
         transform-origin: bottom center;
         animation-name: clock;
-        animation-duration: 3600s;
+        animation: clock 3600s infinite linear ;
 }
+
 
 
 

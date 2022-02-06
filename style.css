@@ -1,0 +1,122 @@
+                                                                .clock {
+                                                                    background-color: white;
+                                                                    border: 5px solid black;
+                                                                    position: relative;
+                                                                    width: 600px;
+                                                                    height: 600px;
+                                                                    margin: 20px 20px;
+                                                                    border-radius: 50%;
+                                                                }
+                                                                
+                                                                .clock-center {
+                                                                    width: 30px;
+                                                                    height: 30px;
+                                                                    border-radius: 50%;
+                                                                    border: 2px solid black;
+                                                                    background: black;
+                                                                    position: absolute;
+                                                                    top: 46%;
+                                                                    left: 280px;
+                                                                }
+                                                                
+                                                                .clock-twelve {
+                                                                    width: 40px;
+                                                                    height: 10px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 40%;
+                                                                    background: black;
+                                                                    position: absolute;
+                                                                    left: 50%;
+                                                                    transform: translateX(-50%) rotate(90deg);
+                                                                    top: 20px;
+                                                                }
+                                                                
+                                                                .clock-three {
+                                                                    width: 40px;
+                                                                    height: 10px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 40%;
+                                                                    background: black;
+                                                                    position: absolute;
+                                                                    transform: rotate(180deg);
+                                                                    top: 48%;
+                                                                    right: 20px;
+                                                                }
+                                                                
+                                                                .clock-six {
+                                                                    width: 40px;
+                                                                    height: 10px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 40%;
+                                                                    background: black;
+                                                                    position: absolute;
+                                                                    left: 47%;
+                                                                    transform: rotate(90deg);
+                                                                    bottom: 20px;
+                                                                    ;
+                                                                }
+                                                                
+                                                                .clock-nine {
+                                                                    width: 40px;
+                                                                    height: 10px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 40%;
+                                                                    background: black;
+                                                                    position: absolute;
+                                                                    top: 47%;
+                                                                    left: 20px;
+                                                                }
+                                                                
+                                                                .clock-minute {
+                                                                    width: 20px;
+                                                                    height: 300px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 40%;
+                                                                    background: black;
+                                                                    position: absolute;
+                                                                    top: 0%;
+                                                                    left: 48%;
+                                                                    animation-name: clock-minute;
+                                                                    animation-duration: 10s;
+                                                                    animation-timing-function: linear;
+                                                                    animation-iteration-count: infinite;
+                                                                    transform-origin: bottom center;
+                                                                    animation-duration: 3600s;
+                                                                }
+                                                                
+                                                                .clock-second {
+                                                                    width: 20px;
+                                                                    height: 200px;
+                                                                    border: 2px solid black;
+                                                                    border-radius: 40%;
+                                                                    background: rgb(224, 13, 13);
+                                                                    position: absolute;
+                                                                    top: 15%;
+                                                                    left: 48%;
+                                                                    animation-name: clock-second;
+                                                                    animation-duration: 10s;
+                                                                    animation-timing-function: linear;
+                                                                    animation-iteration-count: infinite;
+                                                                    transform-origin: bottom center;
+                                                                    animation-delay: 2s;
+                                                                    animation-duration: 60s;
+                                                                }
+                                                                
+                                                                @keyframes clock-minute {
+                                                                    0% {
+                                                                        transform: rotate(0%);
+                                                                    }
+                                                                    100% {
+                                                                        transform: rotate(360deg);
+                                                                    }
+                                                                }
+                                                                
+                                                                @keyframes clock-second {
+                                                                    0% {
+                                                                        transform: rotate(0%);
+                                                                        animation-delay: 2s;
+                                                                    }
+                                                                    100% {
+                                                                        transform: rotate(360deg);
+                                                                    }
+                                                                }

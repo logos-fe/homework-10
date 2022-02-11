@@ -1,0 +1,83 @@
+
+.bg-clock {
+    position: relative;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    justify-content: center;
+    background-color: cadetblue;
+    margin-left: 30%;
+}
+.bg {
+    position: absolute;
+    height: 20px;
+    width: 5px;
+    background-color: black;
+}
+.arrow-m {
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: rgb(0, 255, 242);
+    top: 37.5%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 48%; 
+    
+}
+.arrow-h {
+    position: absolute;
+    width: 10px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: rgb(0, 255, 242);
+    top: 36%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 48%; 
+   
+}
+.hours12 {
+    top: 0%;
+    left: 50%;
+}
+.hours3 {
+    top: 50%;
+    left: 96%;
+    transform: rotate(90deg);
+}
+.hours9 {
+    top: 50%;
+    transform: rotate(90deg);
+    left: 2.5%;
+}
+.hours6 {
+    top: 94%;
+    left: 50%;
+}
+.arrow-h {
+    animation: clock 3600s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom center;
+}
+.arrow-m {
+    animation: clock 60s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes clock {
+    from {
+        transform: translate(0, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(0, -50%) rotate(360deg);
+    }
+}
